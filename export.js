@@ -3,7 +3,7 @@ const markdownDirectory = "/Users/l1uyun/agentwork/_tmp/zhihu-explanatory/markdo
 const endpoint = "https://www.zhihu.com/api/v4/columns/explanatory/items";
 const limit = 100;
 const encoder = new TextEncoder();
-const runtime = typeof chrome !== "undefined" && chrome.runtime?.id ? chrome : browser;
+const runtime = chrome;
 
 const escapeYaml = (value) => JSON.stringify(String(value ?? ""));
 
